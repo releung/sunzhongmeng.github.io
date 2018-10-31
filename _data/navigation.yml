@@ -11,5 +11,6 @@ header:
       zh-Hans:  关于
       zh-Hant:  關於
     url:        /about.html
-  - title:      GitHub
+  - titles:     GitHub
     url:        https://github.com/sunzhongmeng    
+    
