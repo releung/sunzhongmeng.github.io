@@ -106,7 +106,7 @@ sources: # bootcdn (default), unpkg
 ## => Sharing
 ##############################
 sharing:
-  provider: false # false (default), "addtoany"
+  provider: addtoany # false (default), "addtoany"
 
 
 ## => Comments
