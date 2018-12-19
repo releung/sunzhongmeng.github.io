@@ -48,3 +48,5 @@ NFS 共享目录 mount（挂载）到另外一个目录下，看能否成功
 * mount 192.168.12.123:/nfsroot G:
 
 成功挂载，打开我的电脑，可以看到G盘。
+
+todo:[修改设备树](https://blog.csdn.net/we1583004we/article/details/80080258)
