@@ -5,13 +5,18 @@ category: tech
 tags: tx2
 key: can
 ---
-TX2 IP:192.168.8.115 SSH PORT:22
+TX2 IP:
+
+192.168.8.115
+{:.info}
+SSH PORT:22
 User:nvidia
 Pwr:nvidia
 
 https://blog.csdn.net/xuezhunzhen9743/article/details/81877757
 
-运行脚本：can.sh
+运行脚本：
+
 ./can.sh
 {:.info}
 sudo ip link set can1 type can bitrate 500000
