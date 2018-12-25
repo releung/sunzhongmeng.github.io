@@ -16,7 +16,8 @@
 
 ## => Site Settings
 ##############################
-text_skin: default
+text_skin : dark # default
+highlight_theme : tomorrow-night 
 url     : https://sunzhongmeng.github.io 
 baseurl : /
 title   : Sunzhongmeng's blog
