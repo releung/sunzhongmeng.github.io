@@ -12,6 +12,8 @@ Pwr:nvidia
 https://blog.csdn.net/xuezhunzhen9743/article/details/81877757
 
 运行脚本：can.sh
+./can.sh
+{:.info}
 sudo ip link set can1 type can bitrate 500000
 
 sudo ip link set up can1
