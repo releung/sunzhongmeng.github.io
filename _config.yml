@@ -17,7 +17,7 @@
 ## => Site Settings
 ##############################
 text_skin : dark # default
-highlight_theme : ocean # tomorrow-night 
+highlight_theme : ocean 
 url     : https://sunzhongmeng.github.io 
 baseurl : /
 title   : Sunzhongmeng's blog
