@@ -24,4 +24,6 @@ export KERNEL_MODULES_OUT=~/Documents/Nvidia/Linux_for_Tegra/rootfs
 {:.info}
 
 
+[参考1](https://devtalk.nvidia.com/default/topic/1025464/jetson-tx2/what-are-the-minimum-lines-of-commands-to-update-device-tree-from-a-host-for-tx2-/)
+
 
