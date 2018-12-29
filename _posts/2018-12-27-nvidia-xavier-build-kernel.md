@@ -20,11 +20,9 @@ export CROSS_COMPILE=~/nVIDIA/toolchain/bin/aarch64-linux-gnu-
 ### 添加环境变量
 
 export KERNEL_OUT=~/nVIDIA/xavier/JetPack/Xavier/Linux_for_Tegra/sources/kernel/kernel-4.9/build
-
 {:.info}
 
 export KERNEL_MODULES_OUT=~/nVIDIA/xavier/JetPack/Xavier/Linux_for_Tegra/rootfs
-
 {:.info}
 
 [参考1](https://devtalk.nvidia.com/default/topic/1025464/jetson-tx2/what-are-the-minimum-lines-of-commands-to-update-device-tree-from-a-host-for-tx2-/)
@@ -52,7 +50,7 @@ make ARCH=arm64 O=$KERNEL_OUT CROSS_COMPILE=${CROSS_COMPILE} -j4
 
 sudo make modules_install ARCH=arm64 O=$KERNEL_OUT CROSS_COMPIL
 E=${CROSS_COMPILE} INSTALL_MOD_PATH=$KERNEL_MODULES_OUT
-{:,info}
+{:.info}
 
 ### 备份当前镜像(Make a backup of the current image)
 把当前的镜像备份成：文件名+日期时间的格式.
@@ -71,11 +69,11 @@ mv ~/nVIDIA/xavier/JetPack/Xavier/Linux_for_Tegra/kernel/dtb{,.`date "+%Y_%m_%d_
 
 但是实际我的目录下并没有zImage这个文件。
 
-###部署二进制文件(Deploy binarier in their required locations)
+### 部署二进制文件(Deploy binarier in their required locations)
 进入到编译输出目录：
 
 cd $KERNEL_OUT
-{:.INFO}
+{:.info}
 
 进入到~/nVIDIA/xavier/JetPack/Xavier/Linux_for_Tegra/sources/kernel/kernel-4.9/build$ 目录下。
 
