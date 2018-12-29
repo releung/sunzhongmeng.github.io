@@ -19,12 +19,17 @@ export CROSS_COMPILE=~/nVIDIA/toolchain/bin/aarch64-linux-gnu-
 ## Kernel编译
 * 添加环境变量
 
-export KERNEL_OUT=~/Documents/Nvidia/Linux_for_Tegra/kernel/linux-headers-4.9.108-tegra/kernel-4.9/build
+export KERNEL_OUT=~/nVIDIA/xavier/JetPack/Xavier/Linux_for_Tegra/sources/kernel/kernel-4.9/build
+
 {:.info}
 
-export KERNEL_MODULES_OUT=~/Documents/Nvidia/Linux_for_Tegra/rootfs
+export KERNEL_MODULES_OUT=~/nVIDIA/xavier/JetPack/Xavier/Linux_for_Tegra/rootfs
+
 {:.info}
 
+export ARCH=arm64
+
+{:.info}
 
 [参考1](https://devtalk.nvidia.com/default/topic/1025464/jetson-tx2/what-are-the-minimum-lines-of-commands-to-update-device-tree-from-a-host-for-tx2-/)
 
