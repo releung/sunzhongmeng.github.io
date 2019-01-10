@@ -8,7 +8,9 @@ key : xavier
 # Xavier指定版本内核编译流程
 ## 编译器前准备工作：
 * 下载L4T Jetson AGX Xavier Driver Package包文件：Jetson_Linux_R31.1.0_aarch64.tbz2，到～/ 目录下，并解压。
+{% hightlight %}
 tar xvf Jetson_Linux_R31.1.0_aarch64.tbz2
+{% endhightlight %}
 
 {:.info}
 
