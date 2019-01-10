@@ -16,7 +16,7 @@
 
 ## => Site Settings
 ##############################
-text_skin : ocean # dark , default
+text_skin : default #ocean # dark , default
 highlight_theme : tomorrow-night 
 url     : https://sunzhongmeng.github.io 
 baseurl : /
