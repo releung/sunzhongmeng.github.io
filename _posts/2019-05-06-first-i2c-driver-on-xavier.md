@@ -37,7 +37,7 @@ static int ds90ub96x_remove(struct i2c_client *client)
 }
 
 
-/* 1. ����/����i2c_driver */
+/* 1.分配/设置 i2c_driver */
 static struct i2c_driver ds90ub96x_driver = {
 		.driver	= {
 					.name	= "ds90ub96x",
@@ -123,3 +123,7 @@ sudo insmod ds90ub96x_dev.ko
 然后执行：` lsmod `,可以看到` ds90ub96x `驱动已经加载，在终端执行：` dmesg |grep ds90ub96x_* ` ,可以看到模块加载的时候打印的信息。 
 在终端执行：` sudo rmmod ds90ub96x_dev ` 卸载模块，在终端执行` dmesg |grep ds90ub96x_* `,可以看到模块卸载时打印的信息。 
 
+# 注意事项
+Makefile文件参考的宋宝华老师《Linux设备驱动开发详解-基于最新的Linux 4.0内核》4.9小节的Makefile文件，但模块的路径无法使用` KVERS `指定，这个目前还不知道是什么原因导致的，可能与Xavier的系统镜像有关系，在编译Xavier的kernel和module的时候设置的` build `与书中的有所不同，这个问题有待深究。 
+# 参考链接
+* [本文的代码](https://github.com/sunzhongmeng/nvidia-agx-xavier-training/tree/master/1.first-i2c-driver)
