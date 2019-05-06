@@ -97,7 +97,7 @@ static int ds90ub96x_dev_init(void)
 ```
 
 # makefile代码
-```
+``` makefile
 
 kernel_modules:
         make -C /usr/src/linux-headers-4.9.140-tegra-ubuntu18.04_aarch64/kernel-4.9/  M=$(CURDIR) modules
@@ -115,7 +115,7 @@ obj-m += ds90ub96x_drv.o
 
 # 加载模块
 在终端执行： 
-```
+``` shell
 sudo insmod ds90ub96x_drv.ko 
 sudo insmod ds90ub96x_dev.ko
 
