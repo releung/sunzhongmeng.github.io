@@ -123,9 +123,9 @@ sudo insmod ds90ub96x_dev.ko
 然后执行：` lsmod `,可以看到` ds90ub96x_drv `和` ds90ub96x_dev `驱动已经加载: 
 ![insmod_module_mesg](/resource/2019-05/002.i2c_drv01.png) 
 在终端执行：` dmesg ` ,可以看到模块加载的时候打印的信息： 
-![insmod_module_mesg](/resource/2019-05/002.i2c_dev02.png) 
+![mesg](/resource/2019-05/003.i2c_dev02.png) 
 在终端执行：` sudo rmmod ds90ub96x_dev ` 卸载模块，在终端执行` dmesg `,可以看到模块卸载时打印的信息: 
-![insmod_module_mesg](/resource/2019-05/002.i2c_dev03.png) 
+![rmmod_mesg](/resource/2019-05/004.i2c_dev03.png) 
 # 注意事项
 Makefile文件参考的宋宝华老师《Linux设备驱动开发详解-基于最新的Linux 4.0内核》4.9小节的Makefile文件，但模块的路径无法使用` KVERS `指定，这个目前还不知道是什么原因导致的，可能与Xavier的系统镜像有关系，在编译Xavier的kernel和module的时候设置的` build `与书中的有所不同，这个问题有待深究。 
 # 参考链接
