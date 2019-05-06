@@ -39,13 +39,13 @@ static int ds90ub96x_remove(struct i2c_client *client)
 
 /* 1.分配/设置 i2c_driver */
 static struct i2c_driver ds90ub96x_driver = {
-		.driver	= {
-					.name	= "ds90ub96x",
-							.owner	= THIS_MODULE,
-								},
-			.probe		= ds90ub96x_probe,
-				.remove		= ds90ub96x_remove,
-					.id_table	= ds90ub96x_id_table,
+	.driver	= {
+			.name	= "ds90ub96x",
+			.owner	= THIS_MODULE,
+		},
+		.probe	= ds90ub96x_probe,
+		.remove	= ds90ub96x_remove,
+		.id_table= ds90ub96x_id_table,
 };
 
 static int __init ds90ub96x_drv_init(void)
